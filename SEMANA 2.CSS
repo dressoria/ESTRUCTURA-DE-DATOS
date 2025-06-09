@@ -1,0 +1,62 @@
+using System;
+
+namespace FigurasGeometricas
+{
+    // Clase que representa un círculo
+    public class Circulo
+    {
+        private double radio; // Radio del círculo
+
+        // Constructor que inicializa el radio
+        public Circulo(double radio)
+        {
+            this.radio = radio;
+        }
+
+        // CalcularArea es una función que devuelve un valor double,
+        // se utiliza para calcular el área de un círculo,
+        // requiere como argumento el radio del círculo
+        public double CalcularArea()
+        {
+            return Math.PI * radio * radio;
+        }
+
+        // CalcularPerimetro es una función que devuelve un valor double,
+        // se utiliza para calcular el perímetro (circunferencia) de un círculo,
+        // requiere como argumento el radio del círculo
+        public double CalcularPerimetro()
+        {
+            return 2 * Math.PI * radio;
+        }
+    }
+
+    // Clase que representa un rectángulo
+    public class Rectangulo
+    {
+        private double baseRectangulo;  // Base del rectángulo
+        private double altura;          // Altura del rectángulo
+
+        // Constructor que inicializa base y altura
+        public Rectangulo(double baseRectangulo, double altura)
+        {
+            this.baseRectangulo = baseRectangulo;
+            this.altura = altura;
+        }
+
+        // CalcularArea es una función que devuelve un valor double,
+        // se utiliza para calcular el área del rectángulo,
+        // requiere como argumentos la base y la altura
+        public double CalcularArea()
+        {
+            return baseRectangulo * altura;
+        }
+
+        // CalcularPerimetro es una función que devuelve un valor double,
+        // se utiliza para calcular el perímetro del rectángulo,
+        // requiere como argumentos la base y la altura
+        public double CalcularPerimetro()
+        {
+            return 2 * (baseRectangulo + altura);
+        }
+    }
+}
