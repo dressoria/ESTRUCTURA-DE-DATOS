@@ -1,8 +1,4 @@
-// Clase Estudiante.java
 
-/**
- * Representa un estudiante con datos personales y tres teléfonos.
- */
 public class Estudiante {
     // Atributos
     private int id;
